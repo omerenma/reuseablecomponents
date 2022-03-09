@@ -31,3 +31,16 @@ export const Buttons = styled.button`
 			? "1px solid red"
 			: null};
 `;
+
+export const TextField = styled.input`
+	width: 392px;
+	height: 30px;
+	border-radius: 5px;
+	border: 1px solid #662d9133;
+	&:hover {
+		border: 1.5px solid #662d9133;
+	}
+	&:focus {
+		outline: none;
+	}
+`;
