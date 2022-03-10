@@ -6,6 +6,7 @@ import {
 	VisibilityOff,
 	Error,
 	ErrorOutlineRounded,
+	PersonAdd,
 } from "@mui/icons-material";
 
 export const Buttons = styled.button`
@@ -128,6 +129,28 @@ export const TextFieldWithIcon = ({ type }) => {
 						</InputAdornment>
 					}
 				/>
+			) : type === "name" ? (
+				<Input
+					style={{
+						marginTop: 20,
+						border: "1px solid #662D911F",
+						padding: "0 5px",
+						width: "292px",
+						height: " 35px",
+					}}
+					disableUnderline={true}
+					type="text"
+					// value={values.password}
+					onChange={handleChange("password")}
+					startAdornment={
+						<InputAdornment
+							position="start"
+							style={{ background: "#662D9133" }}
+						>
+							<PersonAdd />
+						</InputAdornment>
+					}
+				/>
 			) : (
 				<Input
 					style={{
@@ -138,17 +161,20 @@ export const TextFieldWithIcon = ({ type }) => {
 						height: " 35px",
 					}}
 					disableUnderline={true}
-					type={values.showPassword ? "text" : "password"}
-					value={values.password}
-					onChange={handleChange("password")}
+					// type={values.showPassword ? "text" : "password"}
+					// value={values.password}
+					// onChange={handleChange("password")}
 					endAdornment={
-						<InputAdornment position="end" style={{ background: "#662D9133" }}>
+						<InputAdornment
+							position="start"
+							style={{ background: "#662D9133" }}
+						>
 							<IconButton
 								onClick={handleClickShowPassword}
 								onMouseDown={handleMouseDownPassword}
-								edge="end"
+								edge="start"
 							>
-								{values.showPassword ? <VisibilityOff /> : <Visibility />}
+								{/* <PersonAdd /> */}
 							</IconButton>
 						</InputAdornment>
 					}
