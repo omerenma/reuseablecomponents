@@ -12,7 +12,7 @@ function App() {
 			<header className="App-header">
 				<Buttons cancel>Delete</Buttons>
 				<TextFields />
-				<TextFieldWithIcon/>
+				<TextFieldWithIcon type="error" />
 			</header>
 		</div>
 	);
