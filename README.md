@@ -6,3 +6,8 @@
   <li>React</li>
   <li>Styled-components</li>
 </ul>
+  <h2>Requirements</h2>
+  <ul>
+  <li>Node.js running on your computer</li>
+  <li></li>
+</ul>
